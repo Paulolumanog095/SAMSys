@@ -1,0 +1,30 @@
+--- 2025-06-05 06:06:36 ---
+Raw POST Data: Array
+(
+    [id] => db650301-95ee-4bb6-9dac-ce887bbc98ea
+    [last_name] => LUMANOG
+    [given_name] => JAYSAN
+    [middle_initial] => U.
+    [course] => BEED
+    [year_level] => 3
+    [semester] => 1
+    [school_year] => 2016-2017
+)
+
+POST['id'] is SET. Value: 'db650301-95ee-4bb6-9dac-ce887bbc98ea' (Type: string)
+filter_input result for 'id': false (Type: boolean)
+--- 2025-06-05 06:08:03 ---
+Raw POST Data: Array
+(
+    [id] => db650301-95ee-4bb6-9dac-ce887bbc98ea
+    [last_name] => LUMANOG
+    [given_name] => JAYSAN
+    [middle_initial] => U.
+    [course] => BEED
+    [year_level] => 3
+    [semester] => 1
+    [school_year] => 2016-2017
+)
+
+POST['id'] is SET. Value: 'db650301-95ee-4bb6-9dac-ce887bbc98ea' (Type: string)
+filter_input result for 'id': false (Type: boolean)
