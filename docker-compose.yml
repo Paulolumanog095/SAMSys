@@ -11,8 +11,10 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./:/var/www/html
+    # This change ensures Nginx waits until the PHP container is fully healthy.
     depends_on:
-      - php
+      php:
+        condition: service_healthy
       
   php:
     build:
@@ -23,3 +25,9 @@ services:
       - ./:/var/www/html
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
+    healthcheck:
+      test: ["CMD-SHELL", "livenessprobe || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 30s
